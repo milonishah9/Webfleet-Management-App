@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React from 'react'
+import '../css/main.css'
 import { CCardHeader, CCardBody, CCardTitle, CCardText, CCard, CRow, CCol } from '@coreui/react'
 
 const WidgetsDropdown = () => {
@@ -8,14 +9,15 @@ const WidgetsDropdown = () => {
     <CRow>
         <CCard color="secondary"
             textColor="white"
-            className="mb-3"
-            style={{ maxWidth: '18rem', backgroundColor:"red" ,padding:'20px 20px ',  margin: '20px'}}
+            className="mb-3 "
+            style={{ maxWidth: '18rem',  padding:'20px 20px ',  margin: '20px'}}
             >
             <CCardBody>
-                <CCardTitle>Registered Resellers</CCardTitle>
+            <CCardTitle>Registered Resellers</CCardTitle>
                 <CCardText>
                 3
                 </CCardText>
+                
             </CCardBody>
         </CCard>
         <CCard color="dark"

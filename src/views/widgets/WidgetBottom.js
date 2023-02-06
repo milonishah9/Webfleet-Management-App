@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from 'react'
-import './widget.css'
+import '../css/main.css'
 import { CChart } from '@coreui/react-chartjs'
 import {
     CTableRow,
@@ -19,12 +19,14 @@ import {
     },
     cardOne:{
         width:'700px',
-        margin:'10px'
+        margin:'10px',
+        border:'none'
     },
     cardTwo:{
         width:'550px',
         height:'300px',
-        margin:'10px'
+        margin:'10px',
+        border:'none'
     }
 
 }
@@ -62,7 +64,7 @@ const WidgetBottom = () => {
     <CCard style={style.cardTwo}>
       <CCardTitle style={{padding:'10px'}}>Average Time / service  :  7:46</CCardTitle>
       <CCardBody>
-            <CChart style={{height:'500px'}}
+            <CChart className='' style={{height:'500px'}}
         type="doughnut"
         data={{
             labels: ['VueJs', 'EmberJs', 'ReactJs', 'AngularJs'],

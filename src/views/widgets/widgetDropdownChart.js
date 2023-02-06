@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from 'react'
-import './style.css'
+import '../css/main.css'
 import { CChartLine } from '@coreui/react-chartjs'
 import {
     CTableHead,
@@ -22,12 +22,14 @@ import {
       width:'852px',
       height:'310px',
       objectFit:'cover',
-      margin:'10px'
+      margin:'10px',
+      border:'none'
     },
     cardTwo:{
       width:'467px',
       height:'310px',
-      margin:'10px'
+      margin:'10px',
+      border:'none'
     },
     chartBody:{
       display:'flex'
