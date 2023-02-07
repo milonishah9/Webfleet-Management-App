@@ -9,8 +9,46 @@ canvas {
     color:green;
 
 }
-.card-title{
-   
- 
+
+.menuCard{
+    width:290px;
+    height:150px;
+    text-align:center;
+    padding:20px 20px;
+    margin: 20px;
+    border-width:0px;
 }
+.login_bg{
+    
+    background-color: #157A83;
+}
+.login_btn{
+    border: none;
+    background: linear-gradient(90.13deg, #1C3835 4.86%, #018592 99.94%);
+    box-shadow: 0px 4px 125px
+}
+.login_link{
+    color: #157A83;
+
+}
+.login_card{
+   
+    height: 450px;
+}
+.login_text{
+   
+    margin-top: 45px;
+}
+
+@media screen and (min-width : 768px) and (max-width : 1400px) {
+    .menuCard{
+        width:226px;
+        height:135px;
+        text-align:center;
+        padding:20px 20px;
+        margin: 20px;
+        border-width:0px;
+    }
+}
+
 

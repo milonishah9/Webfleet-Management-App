@@ -2,15 +2,17 @@
 import React from 'react'
 import '../css/main.css'
 import { CCardHeader, CCardBody, CCardTitle, CCardText, CCard, CRow, CCol } from '@coreui/react'
+import { sygnet } from 'src/assets/brand/sygnet'
+
 
 const WidgetsDropdown = () => {
   return (
    <>
-    <CRow>
+    <CRow >
         <CCard color="secondary"
             textColor="white"
-            className="mb-3 "
-            style={{ maxWidth: '18rem',  padding:'20px 20px ',  margin: '20px'}}
+            className="mb-3 menuCard test"
+      
             >
             <CCardBody>
             <CCardTitle>Registered Resellers</CCardTitle>
@@ -22,8 +24,8 @@ const WidgetsDropdown = () => {
         </CCard>
         <CCard color="dark"
             textColor="white"
-            className="mb-3"
-            style={{ maxWidth: '18rem' ,borderWidth:'0px',padding:'20px 20px ', margin: '20px'}}
+            className="mb-3 menuCard"
+      
             >
             <CCardBody>
                 <CCardTitle>Vehicles in Transite</CCardTitle>
@@ -34,8 +36,8 @@ const WidgetsDropdown = () => {
         </CCard>
         <CCard color="secondary"
             textColor="white"
-            className="mb-3"
-            style={{ maxWidth: '18rem' ,padding:'20px 20px ', margin: '20px' }}
+            className="mb-3 menuCard"
+          
             >
             <CCardBody>
                 <CCardTitle>New Users</CCardTitle>
@@ -46,8 +48,8 @@ const WidgetsDropdown = () => {
         </CCard>
         <CCard color="dark"
             textColor="white"
-            className="mb-3"
-            style={{ maxWidth: '18rem' ,borderWidth:'0px',padding:'20px 20px ', margin: '20px' }}
+            className="mb-3 menuCard"
+            
             >
             <CCardBody>
                 <CCardTitle>Subscription Expiring soon </CCardTitle>
@@ -61,8 +63,8 @@ const WidgetsDropdown = () => {
    <CRow style={{margin:'200px', marginBottom:'50px'}}>
         <CCard color="dark"
             textColor="white"
-            className="mb-3"
-            style={{ maxWidth: '18rem' ,borderWidth:'0px' ,padding:'30px 20px ', margin: '20px'}}
+            className="mb-3 menuCard"
+         
             >
             <CCardBody>
                 <CCardTitle>Devices Online</CCardTitle>
@@ -73,8 +75,8 @@ const WidgetsDropdown = () => {
         </CCard>
         <CCard color="secondary"
             textColor="white"
-            className="mb-3"
-            style={{ maxWidth: '18rem', padding:'30px 20px ', margin: '20px'}}
+            className="mb-3 menuCard"
+            
             >
             <CCardBody>
                 <CCardTitle>Total Drivers</CCardTitle>
@@ -85,8 +87,8 @@ const WidgetsDropdown = () => {
         </CCard>
         <CCard color="secondary"
             textColor="white"
-            className="mb-3"
-            style={{ maxWidth: '18rem',borderWidth:'0px' , padding:'30px 20px ',margin: '20px' }}
+            className="mb-3 menuCard"
+          
             >
             <CCardBody>
                 <CCardTitle>Subscribed Clients</CCardTitle>
@@ -97,8 +99,8 @@ const WidgetsDropdown = () => {
         </CCard>
         <CCard color="dark"
             textColor="white"
-            className="mb-3"
-            style={{ maxWidth: '18rem' ,borderWidth:'0px',padding:'30px 20px ', margin: '20px' }}
+            className="mb-3 menuCard"
+          
             >
             <CCardBody>
                 <CCardTitle>Support Requests</CCardTitle>

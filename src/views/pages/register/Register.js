@@ -1,4 +1,7 @@
-import React from 'react'
+/* eslint-disable */
+import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { RegisterUser } from 'src/views/api/api'
 import {
   CButton,
   CCard,
@@ -14,8 +17,36 @@ import {
 import CIcon from '@coreui/icons-react'
 import { cilLockLocked, cilUser } from '@coreui/icons'
 
+const defaultvalue ={
+  username:'',
+  email:'',
+  password:'',
+  Repassword:'',
+
+}
+
 const Register = () => {
+  const [user,setuser]=useState(defaultvalue);
+
+  const onValueChange = (e) =>{
+    setuser({...user,[e.target.name]:e.target.value})
+    console.log(user);
+  }
+  const onClickRegister = async() =>{
+    console.log(user);
+    if(user.password === user.Repassword){
+      console.log('pass match');
+      await RegisterUser(user);
+    }
+    else{
+      console.log("not match");
+      alert('password do not match')
+    }
+  }
+
   return (
+
+
     <div className="bg-light min-vh-100 d-flex flex-row align-items-center">
       <CContainer>
         <CRow className="justify-content-center">
@@ -29,11 +60,11 @@ const Register = () => {
                     <CInputGroupText>
                       <CIcon icon={cilUser} />
                     </CInputGroupText>
-                    <CFormInput placeholder="Username" autoComplete="username" />
+                    <CFormInput placeholder="Username" autoComplete="username" name='username' onChange={(e)=>{onValueChange(e)}} />
                   </CInputGroup>
                   <CInputGroup className="mb-3">
                     <CInputGroupText>@</CInputGroupText>
-                    <CFormInput placeholder="Email" autoComplete="email" />
+                    <CFormInput placeholder="Email" autoComplete="email" name='email' onChange={(e)=>{onValueChange(e)}} />
                   </CInputGroup>
                   <CInputGroup className="mb-3">
                     <CInputGroupText>
@@ -43,6 +74,7 @@ const Register = () => {
                       type="password"
                       placeholder="Password"
                       autoComplete="new-password"
+                      name='password' onChange={(e)=>{onValueChange(e)}}
                     />
                   </CInputGroup>
                   <CInputGroup className="mb-4">
@@ -53,10 +85,11 @@ const Register = () => {
                       type="password"
                       placeholder="Repeat password"
                       autoComplete="new-password"
+                      name='Repassword' onChange={(e)=>{onValueChange(e)}}
                     />
                   </CInputGroup>
                   <div className="d-grid">
-                    <CButton color="success">Create Account</CButton>
+                    <CButton color="success" onClick={()=>onClickRegister()}>Create Account</CButton>
                   </div>
                 </CForm>
               </CCardBody>
