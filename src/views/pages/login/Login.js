@@ -56,7 +56,7 @@ const Login = () => {
                   <CForm className='login_text'>
                     <h1>Login</h1>
                     <p className="text-medium-emphasis">Sign In to your account</p>
-                    <CInputGroup className="mb-3">
+                    <CInputGroup className="mb-4">
                       <CInputGroupText>
                         <CIcon icon={cilUser} />
                       </CInputGroupText>

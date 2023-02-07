@@ -39,13 +39,31 @@ canvas {
    
     margin-top: 45px;
 }
+.logo{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 50px;
+    top: 13px;
+    background: url('../../assets/images/logo.png');
+    background-size: 40px 40px;
+}
+.logo_name{
+    
+position: absolute;
+width: 184.41px;
+height: 31.71px;
+left: 128.29px;
+top: 75.15px;
+background: url('../../assets/images/logoName.png');
+}
 
-@media screen and (min-width : 768px) and (max-width : 1400px) {
+@media screen and (min-width : 768px) and (max-width : 1500px) {
     .menuCard{
-        width:226px;
+        width:210px;
         height:135px;
         text-align:center;
-        padding:20px 20px;
+        padding:10px 20px;
         margin: 20px;
         border-width:0px;
     }

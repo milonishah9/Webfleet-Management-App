@@ -197,7 +197,7 @@ const _nav = [
   {
     component: CNavItem,
     name: 'Charts',
-    to: '/charts',
+    to: '/dashboard/charts',
     icon: <CIcon icon={cilChartPie} customClassName="nav-icon" />,
   },
   {

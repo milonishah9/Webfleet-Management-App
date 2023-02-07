@@ -1,4 +1,6 @@
+/* eslint-disable */
 import React from 'react'
+import '../views/css/main.css'
 import { useSelector, useDispatch } from 'react-redux'
 
 import { CSidebar, CSidebarBrand, CSidebarNav, CSidebarToggler } from '@coreui/react'
@@ -29,9 +31,12 @@ const AppSidebar = () => {
         dispatch({ type: 'set', sidebarShow: visible })
       }}
     >
-      <CSidebarBrand className="d-none d-md-flex" to="/">
-        <CIcon className="sidebar-brand-full" icon={logoNegative} height={35} />
-        <CIcon className="sidebar-brand-narrow" icon={sygnet} height={35} />
+      <CSidebarBrand className="d-none d-md-flex"  to="/">
+      
+
+       <CIcon className="sidebar-brand-full logo"  height={70} />
+        <CIcon className="sidebar-brand-narrow logo_name" height={70} />
+      
       </CSidebarBrand>
       <CSidebarNav>
         <SimpleBar>

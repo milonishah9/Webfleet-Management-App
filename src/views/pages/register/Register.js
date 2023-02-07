@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { RegisterUser } from 'src/views/api/api'
+import '../../css/main.css'
 import {
   CButton,
   CCard,
@@ -32,16 +33,29 @@ const Register = () => {
     setuser({...user,[e.target.name]:e.target.value})
     console.log(user);
   }
-  const onClickRegister = async() =>{
+  const onClickRegister = () =>{
     console.log(user);
     if(user.password === user.Repassword){
       console.log('pass match');
-      await RegisterUser(user);
+       RegisterNewUser();
+        
     }
     else{
       console.log("not match");
       alert('password do not match')
     }
+  }
+  const RegisterNewUser = async() =>{
+        await RegisterUser(user)
+        .then((res)=>{
+          console.log(res.data)
+          if(res.data == 'registered' ){
+            alert('Registered Successfully')
+          }
+          else{
+            console.log('failed ');
+          }
+        })
   }
 
   return (
@@ -56,17 +70,17 @@ const Register = () => {
                 <CForm>
                   <h1>Register</h1>
                   <p className="text-medium-emphasis">Create your account</p>
-                  <CInputGroup className="mb-3">
+                  <CInputGroup className="mb-4">
                     <CInputGroupText>
                       <CIcon icon={cilUser} />
                     </CInputGroupText>
                     <CFormInput placeholder="Username" autoComplete="username" name='username' onChange={(e)=>{onValueChange(e)}} />
                   </CInputGroup>
-                  <CInputGroup className="mb-3">
+                  <CInputGroup className="mb-4">
                     <CInputGroupText>@</CInputGroupText>
                     <CFormInput placeholder="Email" autoComplete="email" name='email' onChange={(e)=>{onValueChange(e)}} />
                   </CInputGroup>
-                  <CInputGroup className="mb-3">
+                  <CInputGroup className="mb-4">
                     <CInputGroupText>
                       <CIcon icon={cilLockLocked} />
                     </CInputGroupText>
@@ -89,7 +103,7 @@ const Register = () => {
                     />
                   </CInputGroup>
                   <div className="d-grid">
-                    <CButton color="success" onClick={()=>onClickRegister()}>Create Account</CButton>
+                    <CButton color="success" className='login_btn' type='submit' onClick={()=>onClickRegister()}>Create Account</CButton>
                   </div>
                 </CForm>
               </CCardBody>

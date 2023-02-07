@@ -20,8 +20,7 @@ exports.registerUser = async(req,res) => {
     connection.query('INSERT INTO user SET ?',[req.body], (err, rows) => {
         if(err) throw err;
         console.log('The data from users table are: \n', rows);
-        console.log(rows.length);
-        console.log(rows);
+        res.json('registered')
         connection.end();
     });
 };
@@ -37,6 +36,7 @@ exports.loginAuth = async(req,res) => {
     if(result.length > 0){
         console.log('user logged');
         res.json('user')
+        connection.end();
     }
     else{
         res.json('notUser')
