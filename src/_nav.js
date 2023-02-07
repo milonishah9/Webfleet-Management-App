@@ -9,37 +9,45 @@ import {
   cilDrop,
   // cilNotes,
   cilPencil,
-  cilAccountLogout,
+  cilArrowCircleRight,
+  cilBellExclamation,
+  cilPeople,
+  cilTruck,
+  cilFile,
+  cilDescription,
   // cilPuzzle,
   // cilSpeedometer,
   // cilStar,
 } from '@coreui/icons'
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
+import Image from 'src/assets/images/Vector.png'
 
 const _nav = [
   {
     component: CNavItem,
     name: 'Dashboard',
     to: '/theme/typography',
+    Image: <img src={Image} />,
     icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'Vehicle Management',
     to: '/theme/typography',
-    icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
+    icon: <CIcon icon={cilTruck} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'Driver Management',
     to: '/theme/colors',
+    // Image: <img src="./assets/images/logo_1.png"/>,
     icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'User Management',
     to: '/theme/typography',
-    icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
+    icon: <CIcon icon={cilPeople} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
@@ -63,19 +71,19 @@ const _nav = [
     component: CNavItem,
     name: 'Billing',
     to: '/theme/typography',
-    icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
+    icon: <CIcon icon={cilFile} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'Reports',
     to: '/theme/typography',
-    icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
+    icon: <CIcon icon={cilDescription} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'Alerts/Notification',
     to: '/theme/typography',
-    icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
+    icon: <CIcon icon={cilBellExclamation} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
@@ -87,7 +95,7 @@ const _nav = [
     component: CNavItem,
     name: 'Logout',
     to: '/theme/typography',
-    icon: <CIcon icon={cilAccountLogout} customClassName="nav-icon" />,
+    icon: <CIcon icon={cilArrowCircleRight} customClassName="nav-icon" />,
   },
   // {
   //   component: CNavTitle,
