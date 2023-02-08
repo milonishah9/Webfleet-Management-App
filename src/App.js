@@ -1,7 +1,7 @@
 import React, { Component, Suspense } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './scss/style.scss'
-
+import './index.css'
 const loading = (
   <div className="pt-3 text-center">
     <div className="sk-spinner sk-spinner-pulse"></div>
