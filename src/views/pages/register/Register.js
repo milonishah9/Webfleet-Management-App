@@ -103,7 +103,7 @@ const Register = () => {
                     />
                   </CInputGroup>
                   <div className="d-grid">
-                    <CButton color="success" className='login_btn' type='submit' onClick={()=>onClickRegister()}>Create Account</CButton>
+                    <CButton className='mt-3 login_btn' type='submit' onClick={()=>onClickRegister()}>Create Account</CButton>
                   </div>
                 </CForm>
               </CCardBody>

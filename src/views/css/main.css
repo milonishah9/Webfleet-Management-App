@@ -38,7 +38,8 @@ canvas {
 .login_btn{
     border: none;
     background: linear-gradient(90.13deg, #1C3835 4.86%, #018592 99.94%);
-    box-shadow: 0px 4px 125px
+    box-shadow: 0px 4px 125px;
+    
 }
 .login_link{
     color: #157A83;
@@ -62,13 +63,12 @@ canvas {
     background-size: 40px 40px;
 }
 .logo_name{
-    
-position: absolute;
-width: 184.41px;
-height: 31.71px;
-left: 128.29px;
-top: 75.15px;
-background: url('../../assets/images/logoName.png');
+    position: absolute;
+    width: 184.41px;
+    height: 31.71px;
+    left: 128.29px;
+    top: 75.15px;
+    background: url('../../assets/images/logoName.png');
 }
 
 @media screen and (min-width : 768px) and (max-width : 1500px) {
