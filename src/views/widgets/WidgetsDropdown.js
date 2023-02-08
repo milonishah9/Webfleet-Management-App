@@ -11,101 +11,83 @@ const WidgetsDropdown = () => {
     <CRow >
         <CCard color="secondary"
             textColor="white"
-            className="mb-3 menuCard test"
-      
-            >
+            className="mb-3 menuCard">
             <CCardBody>
-            <CCardTitle>Registered Resellers</CCardTitle>
-                <CCardText>
-                3
-                </CCardText>
-                
-            </CCardBody>
-        </CCard>
-        <CCard color="dark"
-            textColor="white"
-            className="mb-3 menuCard"
-      
-            >
-            <CCardBody>
-                <CCardTitle>Vehicles in Transite</CCardTitle>
-                <CCardText>
-                    50
+                <CCardText className='manuText'>
+                    3 <br/>
+                    Registered Resellers 
                 </CCardText>
             </CCardBody>
         </CCard>
         <CCard color="secondary"
             textColor="white"
-            className="mb-3 menuCard"
-          
-            >
+            className="mb-3 menuCard">
             <CCardBody>
-                <CCardTitle>New Users</CCardTitle>
-                <CCardText>
-                11
-                </CCardText>
-            </CCardBody>
-        </CCard>
-        <CCard color="dark"
-            textColor="white"
-            className="mb-3 menuCard"
-            
-            >
-            <CCardBody>
-                <CCardTitle>Subscription Expiring soon </CCardTitle>
-                <CCardText>
-                2
-                </CCardText>
-            </CCardBody>
-        </CCard>
-   </CRow>
-
-   <CRow style={{margin:'200px', marginBottom:'50px'}}>
-        <CCard color="dark"
-            textColor="white"
-            className="mb-3 menuCard"
-         
-            >
-            <CCardBody>
-                <CCardTitle>Devices Online</CCardTitle>
-                <CCardText>
-                  73
+                <CCardText className='manuText'>
+                    50 <br/>
+                    Vehicles in Transite 
                 </CCardText>
             </CCardBody>
         </CCard>
         <CCard color="secondary"
             textColor="white"
-            className="mb-3 menuCard"
-            
-            >
+            className="mb-3 menuCard">
             <CCardBody>
-                <CCardTitle>Total Drivers</CCardTitle>
-                <CCardText>
-                    53
+                <CCardText className='manuText'>
+                    11 <br/>
+                    New Users
                 </CCardText>
             </CCardBody>
         </CCard>
         <CCard color="secondary"
             textColor="white"
-            className="mb-3 menuCard"
-          
-            >
+            className="mb-3 menuCard">
             <CCardBody>
-                <CCardTitle>Subscribed Clients</CCardTitle>
-                <CCardText>
-                  7
+                <CCardText className='manuText'>
+                    2 <br/>
+                    Subscription Expiring soon 
                 </CCardText>
             </CCardBody>
         </CCard>
-        <CCard color="dark"
+    </CRow>
+    <CRow style={{margin:'200px', marginBottom:'50px'}}>
+        <CCard color="secondary"
             textColor="white"
-            className="mb-3 menuCard"
-          
-            >
+            className="mb-3 menuCard">
             <CCardBody>
-                <CCardTitle>Support Requests</CCardTitle>
-                <CCardText>
-                    3
+                <CCardText className='manuText'>
+                    73 <br/>
+                    Devices Online
+                </CCardText>
+            </CCardBody>
+        </CCard>
+        <CCard color="secondary"
+            textColor="white"
+            className="mb-3 menuCard">
+            <CCardBody>
+                <CCardText className='manuText'>
+                    53 <br/>
+                    Total Drivers 
+                </CCardText>
+            </CCardBody>
+        </CCard>
+        <CCard color="secondary"
+            textColor="white"
+            className="mb-3 menuCard">
+            <CCardBody>
+                <CCardText className='manuText'>
+                    7 <br/>
+                    Subscribed Clients
+                </CCardText>
+            </CCardBody>
+        </CCard>
+        <CCard color="secondary"
+            textColor="white"
+            className="mb-3 menuCard">
+            <CCardBody>
+                <CCardText className='manuText'>
+                    3 <br/>
+                    Support Requests 
                 </CCardText>
             </CCardBody>
         </CCard>
