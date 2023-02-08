@@ -85,4 +85,21 @@ exports.allDrivers = async(req,res)=>{
 })
 }
 
+//to get active user list 
+exports.ActiveUserList = async(req,res)=>{
+    pool.getConnection((err,connection)=>{
+      if(err) throw err
+          connection.query('SELECT * FROM vehiclemanagement WHERE Status = ?',['Active'],(err,result)=>{
+          connection.release();
+  
+          if(!err){
+              console.log(result);
+          }
+          else{
+              console.log(err);
+          }
+      })
+  })
+  }
+
 

@@ -5,11 +5,8 @@ canvas {
 
 }
 .mb-3{
-    background-color:#157A83 !important;
-    opacity: 0.2;
-
+    background-color:rgba(21,122,131,0.3) !important;
 }
-
 .menuCard{
     width:290px;
     height:150px;
@@ -29,7 +26,7 @@ canvas {
     font-weight: 600;
     line-height: 29px;
     letter-spacing: 0em;
-
+    color:  #157A83;
 }
 .login_bg{
     
@@ -63,7 +60,8 @@ canvas {
     background-size: 40px 40px;
 }
 .logo_name{
-    position: absolute;
+    
+position: absolute;
     width: 184.41px;
     height: 31.71px;
     left: 128.29px;

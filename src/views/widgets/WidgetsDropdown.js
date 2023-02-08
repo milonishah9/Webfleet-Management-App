@@ -1,11 +1,22 @@
 /* eslint-disable */
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../css/main.css'
 import { CCardHeader, CCardBody, CCardTitle, CCardText, CCard, CRow, CCol } from '@coreui/react'
 import { sygnet } from 'src/assets/brand/sygnet'
+import { getTotalDrivers } from '../api/api'
 
 
 const WidgetsDropdown = () => {
+    const[drivres,setdrivers]= useState([30])
+    useEffect(()=>{
+      //  getDrivers()
+    },[])
+
+    const getDrivers = async() => {
+       const Drivers = await getTotalDrivers() 
+       console.log(Drivers.data[0]);
+       setdrivers(Drivers.data)
+    }
   return (
    <>
     <CRow >
@@ -66,7 +77,7 @@ const WidgetsDropdown = () => {
             className="mb-3 menuCard">
             <CCardBody>
                 <CCardText className='manuText'>
-                    53 <br/>
+                    {drivres} <br/>
                     Total Drivers 
                 </CCardText>
             </CCardBody>
