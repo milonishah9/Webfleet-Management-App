@@ -20,14 +20,14 @@ import {
   const style = {
     cardOne:{
       width:'852px',
-      height:'310px',
+      height:'350px',
       objectFit:'cover',
       margin:'10px',
       border:'none'
     },
     cardTwo:{
       width:'467px',
-      height:'310px',
+      height:'350px',
       margin:'10px',
       border:'none'
     },

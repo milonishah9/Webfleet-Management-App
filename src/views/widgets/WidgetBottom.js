@@ -24,7 +24,7 @@ import {
     },
     cardTwo:{
         width:'550px',
-        height:'300px',
+        height:'350px',
         margin:'10px',
         border:'none'
     }
